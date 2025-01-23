@@ -8,9 +8,11 @@
         <style>
             body {
                 margin: 20vh auto 50px;
-                font-family: Arial, sans-serif;
-                display: flex;
                 max-width: 600px;
+                display: flex;
+                font-family: Arial, sans-serif;
+                color: rgb(255, 255, 255);
+                background-color: rgb(18, 12, 0);
             }
 
             #left_box {
@@ -39,11 +41,16 @@
     </head>
     <body>
         <div id="left_box">
-            <img id="profile_picture" src="../images/profile.jpeg" alt="Profile Picture">
+            <img 
+            id="profile_picture"
+            src="../images/profile.jpeg" 
+            alt="Profile Picture" 
+            onerror="this.onerror=null; this.src='../majdiJ.github.io/images/profile.jpeg';" 
+            />
         </div>
         <div id="right_box">
-            <h1>Majdi Jaigirdar</h1>
-            <p>Hey, I'm Majdi Jaigirdar. I'm studying Computer Science at Edge Hill University. I've got a passion for programming and I'm always looking to learn new things. I'm currently learning python and java at university. I'm also learning web development in my free time and learning new technologies, tools and languages.</p>    
+            <h1>Hey! I'm Majdi Jaigirdar</h1>
+            <p>I'm a Computer Science atudent at Edge Hill University. I've got a passion for programming and I'm always looking to learn new things. I'm currently learning python and java at uni, I'm also learning web development in my free time and learning new technologies, tools and languages.</p>    
         </div>
     </body>
 </html>
