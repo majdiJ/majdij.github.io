@@ -8,49 +8,63 @@
         <style>
             body {
                 margin: 20vh auto 50px;
-                max-width: 600px;
+                max-width: 800px;
                 display: flex;
-                font-family: Arial, sans-serif;
-                color: rgb(255, 255, 255);
-                background-color: rgb(18, 12, 0);
+                flex-direction: column;
+                align-items: center;
+                font-family: 'Helvetica Neue', Arial, sans-serif;
+                color: #ffffff;
+                background-color: #111111;
+                line-height: 1.6;
+            }
+
+            #top_section {
+                background: linear-gradient(to bottom, #00008b, #000000);
             }
 
             #left_box {
-                width: 200px;
-                height: 200px;
-                margin-right: 20px;
+                width: 150px;
+                height: 150px;
+                margin-bottom: 20px;
             }
 
             #profile_picture {
-                width: 200px;
+                width: 100%;
                 border-radius: 50%;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             }
 
             #right_box {
-                flex: 1;
+                text-align: center;
             }
 
             #right_box h1 {
                 margin: 0;
+                font-size: 2em;
             }
 
             #right_box p {
                 margin: 10px 0 0;
+                font-size: 1.1em;
             }
         </style>
     </head>
     <body>
-        <div id="left_box">
-            <img 
-            id="profile_picture"
-            src="../images/profile.jpeg" 
-            alt="Profile Picture" 
-            onerror="this.onerror=null; this.src='../majdiJ.github.io/images/profile.jpeg';" 
-            />
-        </div>
-        <div id="right_box">
-            <h1>Hey! I'm Majdi Jaigirdar</h1>
-            <p>I'm a Computer Science atudent at Edge Hill University. I've got a passion for programming and I'm always looking to learn new things. I'm currently learning python and java at uni, I'm also learning web development in my free time and learning new technologies, tools and languages.</p>    
+        <div id="top_section">
+            <div id="flex_box_container">
+                <div id="left_box">
+                    <img 
+                    id="profile_picture"
+                    src="../images/profile.jpeg" 
+                    alt="Profile Picture" 
+                    onerror="this.onerror=null; this.src='../majdiJ.github.io/images/profile.jpeg';" 
+                    />
+                </div>
+                <div id="right_box">
+                    <h1>Hey! I'm Majdi Jaigirdar</h1>
+                    <p>I'm a Computer Science atudent at Edge Hill University. I've got a passion for programming and I'm always looking to learn new things. I'm currently learning python and java at uni, I'm also learning web development in my free time and learning new technologies, tools and languages.</p>    
+                </div>        
+            </div>
         </div>
     </body>
 </html>
