@@ -3,20 +3,40 @@ body {
     color: #ffffff;
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 50px;
+    padding: 50px 7vw;
 }
 
 #hero {
     position: relative;
     background: rgb(0,61,76);
-    background: linear-gradient(0deg, rgba(0,61,76,1) 0%, rgba(0,116,137,1) 50%, rgba(0,150,134,1) 100%);
+    background: linear-gradient(0deg, rgba(0,61,76,1) 0%, rgba(0,116,137,1) 50%, rgba(0,143,135,1) 100%);
+    border-radius: 15px;
     overflow: hidden;
 }
 
-#flex_box_container {
+#hero #flex-box-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 75vh;
     width: 100%;
+}
+
+#hero .flex-boxes {
+    padding: 0 2%;
+}
+
+#hero #left-box {
+    flex: 2;
+    padding-left: 4%;
+}
+
+#hero #left-box img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#hero #right-box {
+    flex: 3;
+    padding-right: 4%;
 }
