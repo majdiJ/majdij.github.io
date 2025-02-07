@@ -1,0 +1,72 @@
+
+/* Custom home page styles */
+
+#hero {
+    position: relative;
+    background: #001a2a;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 90vh;
+    z-index: 0;
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../images/profile_long.jpg');
+    background-size: cover;
+    background-position: bottom;
+    opacity: 0.90;
+    z-index: -1; /* Ensure the background is behind the content */
+}
+
+#hero #hello-text {
+    padding-top: 35vh;
+    padding-left: 55%;
+    padding-right: 4%;
+}
+
+#hero #hello-text h1 {
+    font-size: 2rem;
+}
+
+#hero #hello-text #smallHey {
+    font-size: 1.3rem;
+}
+
+#hero #hello-text p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the social buttons */
+#hero .social-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+/* Individual button styling */
+#hero .social-buttons a {
+    margin-top: 10px;
+    color: #fff;  /* White icons */
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+#hero .social-buttons a:hover {
+    transform: scale(1.1);
+}
+
+#hero .social-buttons svg {
+    width: 22px;
+    height: 22px;
+}

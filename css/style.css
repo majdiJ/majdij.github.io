@@ -13,87 +13,25 @@ body {
     padding: 4vh 7vw 0;
 }
 
-#hero {
-    position: relative;
-    background: #001a2a;
-    border-radius: 15px;
-    overflow: hidden;
-    height: 90vh;
-    z-index: 0;
+body a {
+    color: #f4c542;
 }
 
-#hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('../images/profile_long.jpg');
-    background-size: cover;
-    background-position: bottom;
-    opacity: 0.90;
-    z-index: -1; /* Ensure the background is behind the content */
+main {
+    min-height: 90vh;
 }
 
-#hero #hello-text {
-    padding-top: 35vh;
-    padding-left: 55%;
-    padding-right: 4%;
-}
-
-#hero #hello-text h1 {
+header #hello-text h1 {
     font-size: 2rem;
 }
 
-#hero #hello-text #smallHey {
+header #hello-text #smallHey {
     font-size: 1.3rem;
 }
 
-#hero #hello-text p {
-    margin: 0;
-    padding: 0;
-}
+/* Navigation menu */
 
-/* Container for the social buttons */
-.social-buttons {
-    display: flex;
-    gap: 15px;
-}
-
-/* Individual button styling */
-.social-buttons a {
-    margin-top: 10px;
-    color: #fff;  /* White icons */
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    transition: transform 0.3s ease;
-}
-
-.social-buttons a:hover {
-    transform: scale(1.1);
-}
-
-.social-buttons svg {
-    width: 22px;
-    height: 22px;
-}
-
-/* Section styling */
-
-#same-line-content {
-    display: flex;
-    justify-content: space-between; /* Creates space between the nav and the copyright text */
-    align-items: center; /* Vertically centers both elements */
-}
-
-/* Navigation bar */
-
-#home-nav ul {
+#navigation-menu ul {
     list-style: none;
     padding: 0;
     margin: 10px 0;
@@ -101,30 +39,89 @@ body {
     gap: 30px; /* Adjust the gap as needed */
 }
   
-#home-nav ul li {
+#navigation-menu ul li {
     display: inline;
 }
   
-#home-nav ul li a {
+#navigation-menu ul li a {
     text-decoration: none;
     color: #fff;
     font-weight: lighter;
 }
 
-#home-nav ul li a.active-nav-link {
+#navigation-menu ul li a.active-nav-link {
     color: #f4c542;
     text-decoration: underline;
 }
 
-#home-nav ul li a:hover {
-    color: #ffe6a3;
+#navigation-menu ul li a:hover {
+    color: #f4c542;
+}
+
+/* about me photo div */
+
+.defualt-page-format-banner{
+    margin-top: 4vh;
+    position: relative;
+    background: #001a2a;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 70vh;
+    z-index: 0;
+}
+
+.defualt-page-format-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../images/lost_page.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.75;
+    z-index: -1; /* Ensure the background is behind the content */
+}
+
+#about-me-photo::before {
+    background-image: url('../images/about_me.jpg');
+}
+
+.defualt-page-format-banner #content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 3rem;
+}
+
+/* About me main content */
+
+.defualt-page-format-main-content {
+    margin: 8vh 7vw 15vh;
+    font-weight: thinner;
+}
+
+/* footer */
+
+footer {
+    background: #001a2a;
+    margin: 0 -7vw;
+    padding: 5px 7vw;
+}
+
+#same-line-content {
+    display: flex;
+    justify-content: space-between; /* Creates space between the nav and the copyright text */
+    align-items: center; /* Vertically centers both elements */
 }
 
 /* copyright text */
 
-#copyright {
+#same-line-content #copyright {
     margin: 0;
-    color: #ffffff6f;
+    color: #ffffff91;
     font-size: 0.8rem;
     font-weight: lighter;
 }
