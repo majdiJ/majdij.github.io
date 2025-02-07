@@ -1,42 +1,130 @@
+@font-face {
+    font-family: 'Geologica';
+    src: url('../fonts/Geologica/Geologica-VariableFont_CRSV,SHRP,slnt,wght.ttf') format('truetype');
+    font-weight: 100 900; /* Supports a range of weights */
+    font-style: normal;
+}
+
 body {
     background-color: #00111c;
     color: #ffffff;
-    font-family: Arial, sans-serif;
+    font-family: 'Geologica', sans-serif;
     margin: 0;
-    padding: 50px 7vw;
+    padding: 4vh 7vw 0;
 }
 
 #hero {
     position: relative;
-    background: rgb(0,61,76);
-    background: linear-gradient(0deg, rgba(0,61,76,1) 0%, rgba(0,116,137,1) 50%, rgba(0,143,135,1) 100%);
+    background: #001a2a;
     border-radius: 15px;
     overflow: hidden;
+    height: 90vh;
+    z-index: 0;
 }
 
-#hero #flex-box-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 75vh;
-    width: 100%;
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../images/profile_long.jpg');
+    background-size: cover;
+    background-position: bottom;
+    opacity: 0.90;
+    z-index: -1; /* Ensure the background is behind the content */
 }
 
-#hero .flex-boxes {
-    padding: 0 2%;
-}
-
-#hero #left-box {
-    flex: 2;
-    padding-left: 4%;
-}
-
-#hero #left-box img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-#hero #right-box {
-    flex: 3;
+#hero #hello-text {
+    padding-top: 35vh;
+    padding-left: 55%;
     padding-right: 4%;
+}
+
+#hero #hello-text h1 {
+    font-size: 2rem;
+}
+
+#hero #hello-text #smallHey {
+    font-size: 1.3rem;
+}
+
+#hero #hello-text p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the social buttons */
+.social-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+/* Individual button styling */
+.social-buttons a {
+    margin-top: 10px;
+    color: #fff;  /* White icons */
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-buttons a:hover {
+    transform: scale(1.1);
+}
+
+.social-buttons svg {
+    width: 22px;
+    height: 22px;
+}
+
+/* Section styling */
+
+#same-line-content {
+    display: flex;
+    justify-content: space-between; /* Creates space between the nav and the copyright text */
+    align-items: center; /* Vertically centers both elements */
+}
+
+/* Navigation bar */
+
+#home-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    gap: 30px; /* Adjust the gap as needed */
+}
+  
+#home-nav ul li {
+    display: inline;
+}
+  
+#home-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: lighter;
+}
+
+#home-nav ul li a.active-nav-link {
+    color: #f4c542;
+    text-decoration: underline;
+}
+
+#home-nav ul li a:hover {
+    color: #ffe6a3;
+}
+
+/* copyright text */
+
+#copyright {
+    margin: 0;
+    color: #ffffff6f;
+    font-size: 0.8rem;
+    font-weight: lighter;
 }
