@@ -9,8 +9,9 @@ body {
     background-color: #00111c;
     color: #ffffff;
     font-family: 'Geologica', sans-serif;
-    margin: 0;
+    margin: 0 auto; /* Center the body */
     padding: 4vh 7vw 0;
+    max-width: 1600px; /* 1260px is the maximum width on my MacBook */
 }
 
 body a {
@@ -36,7 +37,7 @@ header #hello-text #smallHey {
     padding: 0;
     margin: 10px 0;
     display: flex;
-    gap: 30px; /* Adjust the gap as needed */
+    gap: 30px; /* Adjust the gap */
 }
   
 #navigation-menu ul li {
@@ -105,8 +106,9 @@ header #hello-text #smallHey {
 /* main content */
 
 .defualt-page-format-main-content {
-    margin: 8vh 7vw 15vh;
+    margin: 8vh auto 15vh;
     font-family: sans-serif;
+    max-width: 900px;
 }
 
 .defualt-page-format-main-content h2 {
@@ -181,7 +183,7 @@ header #hello-text #smallHey {
     margin: 1rem;
 }
 
-/* Change border colour on focus using your accent colour */
+/* Change border colour on focus using the accent colour */
 #form-contact-me input:focus,
 #form-contact-me textarea:focus {
   border-color: #f4c5429c;
@@ -211,15 +213,24 @@ header #hello-text #smallHey {
 /* footer */
 
 footer {
+    position: relative;
+    left: 50%;
+    margin-left: -50vw;
+    width: 100vw;
     background: #001a2a;
-    margin: 0 -7vw;
-    padding: 5px 7vw;
+}
+
+.footer-content {
+    width: 86vw;
+    max-width: 1600px;
+    margin: 0 auto;
+    align-items: center;
 }
 
 #same-line-content {
     display: flex;
-    justify-content: space-between; /* Creates space between the nav and the copyright text */
-    align-items: center; /* Vertically centers both elements */
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* copyright text */
