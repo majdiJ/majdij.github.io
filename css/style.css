@@ -80,6 +80,15 @@ header #hello-text #smallHey {
     color: #f4c542;
 }
 
+/* navigation menu */
+/* Tablets and smaller devices */
+@media (max-width: 768px) {
+    #navigation-menu ul {
+        margin: 0px 0;
+        gap: 15px; /* Adjust the gap */
+    }
+}
+
 /* about me photo div */
 
 .defualt-page-format-banner{
