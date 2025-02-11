@@ -44,6 +44,33 @@
     padding: 0;
 }
 
+/* hero */
+/* Tablets and smaller devices */
+@media (max-width: 768px) {
+    #hero {
+        margin: 20px auto;
+        height: 85vh;
+    }
+
+    #hero #hello-text {
+        padding: 10px 20px;
+        max-width: 500px;
+    }
+
+    #hero #hello-text h1 {
+        font-size: 1.8rem;
+    }
+    
+    #hero #hello-text #smallHey {
+        font-size: 1.1rem;
+    }
+    
+    #hero #hello-text p {
+        margin: 0;
+        padding: 0;
+    }
+}
+
 /* Container for the social buttons */
 #hero .social-buttons {
     display: flex;
@@ -74,4 +101,27 @@
 
 #navigation-menu .privacy-policy-link {
     color: #ffffff91;
+}
+
+main-page {
+    min-height: 90vh;
+}
+
+/* main-page page links */
+@media (max-width: 768px) {
+    #main-page #same-line-content {
+        display: block;
+        padding: 0;
+    }
+
+    #main-pager #same-line-content #navigation-menu ul {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #main-page #same-line-content #copyright {
+        margin: 0;
+    }
 }
