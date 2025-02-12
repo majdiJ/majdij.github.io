@@ -112,13 +112,15 @@ main-page {
     #same-line-content {
         display: block;
         padding: 0px 0;
+        margin: 0 8px;
     }
 
     #same-line-content #navigation-menu ul {
-        margin: 0;
+        margin: 0px;
         display: flex;
         flex-direction: column;
         gap: 15px;
+        align-items: baseline;
     }
 
     #same-line-content #copyright {

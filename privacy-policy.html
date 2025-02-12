@@ -23,31 +23,49 @@
         <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png">
         <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png">
         <link rel="icon" type="image/x-icon" href="../icons/favicon.ico">
-
         <!-- Apple Touch Icon for iOS -->
         <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
-
         <!-- Android Chrome Icons -->
         <link rel="icon" type="image/png" sizes="192x192" href="../icons/android-chrome-192x192.png">
         <link rel="icon" type="image/png" sizes="512x512" href="../icons/android-chrome-512x512.png">
-
         <!-- Web App Manifest for PWA -->
         <link rel="manifest" href="../icons/site.webmanifest">
+        
+        <!-- Link main.js -->
+        <script src="../js/main.js"></script>
     </head>
     <body>
         <header>
-            <div id="hello-text">
-                <h1><span id="smallHey">Hey there!</span><br> I'm Majdi Jaigirdar 👋</h1>
+            <div class="same-line-content2">
+                <div id="hello-text">
+                    <h1><span id="smallHey">Hey there!</span><br> I'm Majdi Jaigirdar 👋</h1>
+                </div>
+                <div class="hamburger-nav-menu">
+                    <nav>
+                        <button class="hamburger" href="javascript:void(0);" class="icon" onclick="opdnHamburgerMenu()">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </button>
+                    </nav>
+                </div>
             </div>
-            <nav id="navigation-menu">
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../about.html">About</a></li>
-                    <li><a href="../projects.html">Projects</a></li>
-                    <li><a href="../education-skills.html">Education & Skills</a></li>
-                    <li><a href="../contact.html">Contact</a></li>
-                </ul>
-            </nav>    
+            <div class="nav-bar">
+                <div class="Navigation-slide-menu">
+                    <nav id="navigation-menu">
+                        <button class="hamburger-close" onclick="closeHamburgerMenu()" style="color: white; font-size: 30px; background: none; border: none; position: absolute; top: 20px; right: 20px; cursor: pointer;">
+                            ✕
+                        </button>
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../about.html">About</a></li>
+                            <li><a href="../projects.html">Projects</a></li>
+                            <li><a href="../education-skills.html">Education & Skills</a></li>
+                            <li><a href="../contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </header>
         <main>
             <!-- <div class="defualt-page-format-banner" id="about-me-photo">
@@ -59,8 +77,13 @@
             <div class="defualt-page-format-main-content" id="about-me-main-content">
                 <div class="privacy-policy">
                     <h1>Privacy Policy</h1>
+
+                    <div class="article-callout">
+                        <p><em>I believe transparency and privacy are fundamental human rights. Everyone deserves privacy, both in person and in the digital world. Privacy protects us from harm, empowers free expression, and gives us security and comfort. Users should always know what data is being collected, why it’s being collected, how it’s processed, and by whom. Privacy and transparency should never be a bonus - they must be the minimum standard we fight to protect. <strong>- Majdi Jaigirdar</strong></em></p>
+                    </div>
+
                     <p><strong>Effective Date:</strong> Sunday, 9th February 2025</p>
-                    <p>Thank you for visiting <strong>Majdi Jaigirdar</strong> (accessible at <a href="https://majdij.github.io">https://majdij.github.io</a>). This Privacy Policy explains how personal information is collected, used, and disclosed when you visit our website and interact with its features.</p>
+                    <p>This Privacy Policy explains how personal information is collected, used, and disclosed when you visit our website and interact with its features (accessible at <a href="https://majdij.github.io/privacy-policy.html">https://majdij.github.io/privacy-policy.html</a>).</p>
                     
                     <h2>1. Information We Collect</h2>
                     <h3>Contact Form Data:</h3>
