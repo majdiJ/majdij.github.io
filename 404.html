@@ -36,18 +36,36 @@
     </head>
     <body>
         <header>
-            <div id="hello-text">
-                <h1><span id="smallHey">Hey there!</span><br> I'm Majdi Jaigirdar 👋</h1>
+            <div class="same-line-content2">
+                <div id="hello-text">
+                    <h1><span id="smallHey">Hey there!</span><br> I'm Majdi Jaigirdar 👋</h1>
+                </div>
+                <div class="hamburger-nav-menu">
+                    <nav>
+                        <button class="hamburger" href="javascript:void(0);" class="icon" onclick="opdnHamburgerMenu()">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </button>
+                    </nav>
+                </div>
             </div>
-            <nav id="navigation-menu">
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../about.html">About</a></li>
-                    <li><a href="../projects.html">Projects</a></li>
-                    <li><a href="../education-skills.html">Education & Skills</a></li>
-                    <li><a href="../contact.html">Contact</a></li>
-                </ul>
-            </nav>    
+            <div class="nav-bar">
+                <div class="Navigation-slide-menu">
+                    <nav id="navigation-menu">
+                        <button class="hamburger-close" onclick="closeHamburgerMenu()" style="color: white; font-size: 30px; background: none; border: none; position: absolute; top: 20px; right: 20px; cursor: pointer;">
+                            ✕
+                        </button>
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a class="active-nav-link" href="../about.html">About</a></li>
+                            <li><a href="../projects.html">Projects</a></li>
+                            <li><a href="../education-skills.html">Education & Skills</a></li>
+                            <li><a href="../contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </header>
         <main>
             <div class="defualt-page-format-banner" id="404-photo">
