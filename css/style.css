@@ -201,7 +201,7 @@ header #hello-text #smallHey {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('../images/lost_page.jpg');
+    background-image: url('../images/lost_page.webp');
     background-size: cover;
     background-position: center;
     opacity: 0.75;
@@ -209,11 +209,11 @@ header #hello-text #smallHey {
 }
 
 #about-me-photo::before {
-    background-image: url('../images/about_me.jpg');
+    background-image: url('../images/about_me.webp');
 }
 
 #education-skills-photo::before {
-    background-image: url('../images/education_skills.jpg');
+    background-image: url('../images/education_skills.webp');
 }
 
 .defualt-page-format-banner #content {
