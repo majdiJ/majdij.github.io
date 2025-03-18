@@ -10,7 +10,7 @@ body {
     color: #ffffff;
     font-family: 'Geologica', sans-serif;
     margin: 0 auto; /* Center the body */
-    padding: 4vh 7vw 0;
+    padding: 2vh 7vw 0;
     max-width: 1600px; /* 1260px is the maximum width on my MacBook */
 }
 
