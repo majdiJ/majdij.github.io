@@ -243,12 +243,41 @@ header #hello-text #smallHey {
 
 /* article callout */
 .article-callout {
-    padding: 10px 20px;
-    background-color: #00243a;
+    padding: 10px 25px;
+    background-color: rgba(0, 36, 58, 0.709);
     border-left: 3px solid #f4c542;
-    border-radius: 5px;
+    border-radius: 15px;
     max-width: 900px;
     margin: 4vh auto;
+    box-shadow: -1px 4px 10px rgba(0, 0, 0, 0.2), inset 0 0 8px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+    border-top: 1.8px solid rgba(255, 255, 255, 0.11);
+    border-left: 1.2px solid rgba(255, 255, 255, 0.11);
+    border-right: 1.5px solid rgba(255, 255, 255, 0.11);
+    border-bottom: 1.1px solid rgba(255, 255, 255, 0.11);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+.article-callout::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        190deg, 
+        rgba(255, 255, 255, 0.05), 
+        rgba(255, 255, 255, 0.01)
+      );
+    pointer-events: none;
+}
+
+.article-callout:hover {
+    transform: translateY(-0.3px);
+    box-shadow: -1px 4px 10px rgba(0, 0, 0, 0.3), inset 0 0 8px rgba(0, 0, 0, 0.10);
+    background-color: rgba(0, 36, 58, 0.8a);
 }
 
 /* Minor note */
@@ -303,9 +332,8 @@ header #hello-text #smallHey {
     padding: 4px 12px;
     display: flex;
     align-items: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: -1px 4px 10px rgba(0, 0, 0, 0.2), inset 0 0 8px rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(10px);
-    /* border: 1px solid rgba(255, 255, 255, 0.11); */
     border-top: 1.5px solid rgba(255, 255, 255, 0.11);
     border-left: 0.9px solid rgba(255, 255, 255, 0.11);
     border-right: 1.2px solid rgba(255, 255, 255, 0.11);
@@ -334,7 +362,7 @@ header #hello-text #smallHey {
 
 .tile:hover {
     transform: translateY(-4px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+    box-shadow: -1 6px 12px rgba(0, 0, 0, 0.7), inset 0 0 8px rgba(0, 0, 0, 0.10);
     background: rgba(255, 255, 255, 0.085);
 }
 
@@ -414,11 +442,41 @@ header #hello-text #smallHey {
 /* contact form */
 
 #form-contact-me {
-    background-color: #001a2a;
+    background: rgba(255, 255, 255, 0.03);
     padding: 25px;
     border-radius: 20px;
     max-width: 600px;
+    box-shadow: -1px 4px 10px rgba(0, 0, 0, 0.2), inset 0 0 8px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+    border-top: 1.5px solid rgba(255, 255, 255, 0.11);
+    border-left: 0.9px solid rgba(255, 255, 255, 0.11);
+    border-right: 1.2px solid rgba(255, 255, 255, 0.11);
+    border-bottom: 0.8px solid rgba(255, 255, 255, 0.11);
+    overflow: hidden;
     margin: 3rem auto;
+    transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+    overflow: hidden;
+}
+
+#form-contact-me::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        190deg, 
+        rgba(255, 255, 255, 0.05), 
+        rgba(255, 255, 255, 0.01)
+    );
+    pointer-events: none;
+}
+
+#form-contact-me:hover {
+    transform: translateY(-0.5px);
+    box-shadow: -1px 4px 10px rgba(0, 0, 0, 0.3), inset 0 0 8px rgba(0, 0, 0, 0.10);
+    background: rgba(255, 255, 255, 0.031);
 }
 
 #form-contact-me .field {
@@ -438,19 +496,31 @@ header #hello-text #smallHey {
 #form-contact-me input[type="tel"],
 #form-contact-me input[type="file"],
 #form-contact-me textarea {
-  width: 100%;
-  padding: 10px;
-  border: 2px solid #032e4b;
-  background-color: #001a2a;
-  color: #ffffff;
-  border-radius: 10px;
-  font-size: 1rem;
-  box-sizing: border-box;
-  font-family: 'Geological', sans-serif;
+    background: rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    padding: 10px;
+    color: #ffffff;
+    border-radius: 10px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    font-family: 'Geological', sans-serif;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.25);
+    backdrop-filter: none;
+    border-top: 0.2px solid rgba(255, 255, 255, 0.05);
+    border-right: 0.4px solid rgba(255, 255, 255, 0.05);
+    border-left: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1.2px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 
+        /* Highlight on left and bottom */
+        inset 2px -3px 5px rgba(255, 255, 255, 0.025),
+        /* Shadow on top and right */
+        inset -2px 3px 10px rgba(0, 0, 0, 0.3);
 }
 
 #form-contact-me #message {
-    height: 120px;
+    min-height: 120px;
 }
 
 .g-recaptcha {
@@ -460,6 +530,12 @@ header #hello-text #smallHey {
     margin: 1rem;
 }
 
+/* Change background colour on hover */
+#form-contact-me input:hover,
+#form-contact-me textarea:hover {
+    background: rgba(0, 0, 0, 0.07);
+}
+
 /* Change border colour on focus using the accent colour */
 #form-contact-me input:focus,
 #form-contact-me textarea:focus {
@@ -467,10 +543,12 @@ header #hello-text #smallHey {
   outline: none;
 }
 
-/* Style the submit button */
+/* Style the submit button with a 3D effect */
 #form-contact-me button {
     margin-top: 0.5rem;
+    /* Base color with a slight gradient for depth */
     background-color: #f4c542;
+    background-image: linear-gradient(145deg, #d0ae49, #e6b730);
     color: #00111c;
     padding: 10px 20px;
     border: none;
@@ -478,13 +556,24 @@ header #hello-text #smallHey {
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease;
     width: 100%;
+    /* Transition for smooth hover and active state animations */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    /* Base shadow to lift the button off the page */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* Darken the button on hover */
+/* Hover state: elevate the button and deepen the shadow */
 #form-contact-me button:hover {
     background-color: #d4a832;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Active state: simulate a press by resetting the transform and shadow */
+#form-contact-me button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* footer */
