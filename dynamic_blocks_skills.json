@@ -1,0 +1,141 @@
+{
+  "Programming Languages": [
+    {
+      "name": "Python",
+      "description": "Versatile scripting language",
+      "icon": "../images/icons/python.png?text=Python"
+    },
+    {
+      "name": "Java",
+      "description": "Robust, secure enterprise language",
+      "icon": "../images/icons/java.png?text=Java"
+    },
+    {
+      "name": "Visual Basic",
+      "description": "Simple event-driven language",
+      "icon": "../images/icons/visual_basic.png?text=VB"
+    },
+    {
+      "name": "JavaScript",
+      "description": "Dynamic web scripting",
+      "icon": "../images/icons/javascript.png?text=JS"
+    },
+    {
+      "name": "SQL",
+      "description": "Database query language",
+      "icon": "../images/icons/sql.png?text=SQL"
+    },
+    {
+      "name": "Shell Scripting",
+      "description": "Command-line automation scripts",
+      "icon": "../images/icons/shell_scripting.png?text=SH"
+    }
+  ],
+  "Markup and Data Languages": [
+    {
+      "name": "HTML",
+      "description": "Markup for web pages",
+      "icon": "../images/icons/html.png?text=HTML"
+    },
+    {
+      "name": "CSS",
+      "description": "Styles web page layout",
+      "icon": "../images/icons/css.svg?text=CSS"
+    },
+    {
+      "name": "XML",
+      "description": "Extensible markup language",
+      "icon": "../images/icons/xml.png?text=XML"
+    },
+    {
+      "name": "JSON",
+      "description": "Lightweight data interchange",
+      "icon": "../images/icons/json.png?text=JSON"
+    },
+    {
+      "name": "Markdown",
+      "description": "Simplified text formatting",
+      "icon": "../images/icons/markdown.png?text=MD"
+    },
+    {
+      "name": "LaTeX",
+      "description": "High-quality typesetting system",
+      "icon": "../images/icons/latex.png?text=LaTeX"
+    }
+  ],
+  "Frameworks and Libraries": [
+    {
+      "name": "Node.js",
+      "description": "Server-side JavaScript runtime",
+      "icon": "../images/icons/nodejs.svg?text=Node"
+    },
+    {
+      "name": "Express.js",
+      "description": "Minimalist web framework",
+      "icon": "../images/placeholder/question_cube.png?text=Express"
+    }
+  ],
+  "Version Control & Collaboration": [
+    {
+      "name": "Git",
+      "description": "Distributed version control",
+      "icon": "../images/icons/git.webp?text=Git"
+    },
+    {
+      "name": "GitHub",
+      "description": "Collaborative code repository",
+      "icon": "../images/icons/github.png?text=GH"
+    }
+  ],
+  "Database Technologies": [
+    {
+      "name": "MySQL",
+      "description": "Robust relational database",
+      "icon": "../images/icons/mysql.png?text=MySQL"
+    },
+    {
+      "name": "SQLite",
+      "description": "Lightweight embedded database",
+      "icon": "../images/icons/sqlite.png?text=SQLite"
+    },
+    {
+      "name": "MS SQL Server",
+      "description": "Enterprise-grade database platform",
+      "icon": ""
+    }
+  ],
+  "IDEs and Editors": [
+    {
+      "name": "VS Code",
+      "description": "Versatile code editor",
+      "icon": "../images/icons/vscode.png?text=VSCode"
+    },
+    {
+      "name": "Visual Studio",
+      "description": "Comprehensive development environment",
+      "icon": "../images/icons/visual_basic.png?text=VS"
+    },
+    {
+      "name": "PyCharm",
+      "description": "Python-focused development IDE",
+      "icon": "../images/icons/pycharm.png?text=PyCharm"
+    },
+    {
+      "name": "Eclipse",
+      "description": "Extensible open-source IDE",
+      "icon": "../images/icons/eclipse.svg?text=Eclipse"
+    },
+    {
+      "name": "Android Studio",
+      "description": "Android app development IDE",
+      "icon": "../images/icons/androidstudio.png?text=Android"
+    }
+  ],
+  "Web Servers": [
+    {
+      "name": "Nginx",
+      "description": "High-performance web server",
+      "icon": "../images/icons/nginx.png?text=Nginx"
+    }
+  ]
+}

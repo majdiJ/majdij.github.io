@@ -272,8 +272,8 @@ header #hello-text #smallHey {
 }
 
 .defualt-page-format-main-content h2 {
-    margin-top: 2.5rem;
-    margin-bottom: 1.5rem;
+    margin-top: 4rem;
+    margin-bottom: 1.3rem;
 }
 
 .defualt-page-format-main-content h3 {
@@ -286,48 +286,105 @@ header #hello-text #smallHey {
     margin-bottom: 0.5rem;
 }
 
-/* multi-box container */
-.multi-box-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: baseline;
-    column-gap: 20px;
-    row-gap: 20px;
+/* Dyamic skills tiles */
+.skills-section {
+    margin-bottom: 30px;
 }
 
-.multi-box {
-    background-color: #001a2a;
-    padding: 0px 25px 20px;
+.tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.tile {
+    background: rgba(255, 255, 255, 0.025);
     border-radius: 15px;
-    width: 200px;
-    flex: 0 1 calc(33.333% - 20px); /* Adjust the percentage as needed */
-    box-sizing: border-box;
+    padding: 4px 12px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    /* border: 1px solid rgba(255, 255, 255, 0.11); */
+    border-top: 1.5px solid rgba(255, 255, 255, 0.11);
+    border-left: 0.9px solid rgba(255, 255, 255, 0.11);
+    border-right: 1.2px solid rgba(255, 255, 255, 0.11);
+    border-bottom: 0.8px solid rgba(255, 255, 255, 0.11);
+    position: relative;
+    overflow: hidden;
+    min-height: 70px;
+    transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
 }
 
-.multi-box h3 {
-    margin-top: 1.5rem;
-    margin-bottom: 0.5rem;
-    text-align: center;
+/* Simulated light reflection on tile edge */
+.tile::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      190deg, 
+      rgba(255, 255, 255, 0.05), 
+      rgba(255, 255, 255, 0.01)
+    );
+    pointer-events: none;
 }
 
-/* about me photo div */
+.tile:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+    background: rgba(255, 255, 255, 0.085);
+}
+
+.tile img {
+    width: 45px;
+    max-height: 50px;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.tile-content {
+    overflow: hidden;
+    text-align: left;
+}
+
+.tile-content h4 {
+    margin: 0 0 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tile-content p {
+    font-size: 0.85rem;
+    margin: 0;
+    color: #c1c1c1;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* dynamic skills tiles */
 /* Tablets and smaller devices */
 @media (max-width: 768px) {
-    .multi-box-container {
-        display: block;
+    .tiles {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     }
-    
-    .multi-box {
-        width: 100%;
-        flex: none;
-        box-sizing: border-box;
-        margin: 20px auto;
-        padding: 20px;
+
+    .tile img {
+        width: 30px;
+        max-height: 35px;
+        margin-right: 10px;
     }
-    
-    .multi-box h3 {
-        margin: 10px 0 0;
-        text-align: left;
+
+    .tile-content h4 {
+        font-size: 0.8rem;
+    }
+
+    .tile-content p {
+        font-size: 0.6rem;
     }
 }
 
