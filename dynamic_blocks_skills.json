@@ -184,7 +184,7 @@
     {
       "name": "Windows",
       "description": "Microsoft operating system",
-      "icon": "../images/icons/Windows.png?text=Windows"
+      "icon": "../images/icons/windows.png?text=Windows"
     },
     {
       "name": "MacOS",
