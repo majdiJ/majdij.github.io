@@ -129,13 +129,72 @@
       "name": "Android Studio",
       "description": "Android app development IDE",
       "icon": "../images/icons/androidstudio.png?text=Android"
+    },
+    {
+      "name": "Google Colab",
+      "description": "Cloud-based Python notebook environment",
+      "icon": "../images/icons/google_colab.png?text=Colab"
+    },
+    {
+      "name": "Jupyter Notebook",
+      "description": "Interactive computing environment",
+      "icon": "../images/icons/jupyter.png?text=Jupyter"
     }
+    
   ],
   "Web Servers": [
     {
       "name": "Nginx",
       "description": "High-performance web server",
       "icon": "../images/icons/nginx.png?text=Nginx"
+    }
+  ],
+  "Cloud & Containerization": [
+    {
+      "name": "Docker",
+      "description": "Containerization for applications",
+      "icon": "../images/icons/docker.png?text=Docker"
+    }
+  ],
+  "Office & Productivity Tools": [
+    {
+      "name": "Microsoft Office",
+      "description": "Suite of productivity applications",
+      "icon": "../images/icons/microsoft_office.png?text=Office"
+    },
+    {
+      "name": "Google Workspace",
+      "description": "Cloud-based collaboration tools",
+      "icon": "../images/icons/google_workspace.webp?text=GWorkspace"
+    }
+  ],
+  "Analytics & SEO": [
+    {
+      "name": "Google Analytics",
+      "description": "Web traffic and user behavior tracking",
+      "icon": "../images/icons/google_analytics.png?text=GA"
+    },
+    {
+      "name": "Google Search Console",
+      "description": "SEO and website performance monitoring",
+      "icon": "../images/icons/google_search_console.png?text=GSC"
+    }
+  ],
+  "Operating Systems": [
+    {
+      "name": "Windows",
+      "description": "Microsoft operating system",
+      "icon": "../images/icons/Windows.png?text=Windows"
+    },
+    {
+      "name": "MacOS",
+      "description": "Apple's operating system",
+      "icon": "../images/icons/macos.png?text=MacOS"
+    },
+    {
+      "name": "Linux",
+      "description": "Open-source operating system",
+      "icon": "../images/icons/linux.png?text=Linux"
     }
   ]
 }
