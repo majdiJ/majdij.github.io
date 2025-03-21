@@ -189,7 +189,7 @@
     {
       "name": "MacOS",
       "description": "Apple's operating system",
-      "icon": "../images/icons/macos.png?text=MacOS"
+      "icon": "../images/icons/macos_icon.png?text=MacOS"
     },
     {
       "name": "Linux",
