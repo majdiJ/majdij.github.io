@@ -149,10 +149,10 @@
       "icon": "../images/icons/nginx.png?text=Nginx"
     }
   ],
-  "Cloud & Containerization": [
+  "Cloud & Containerisation": [
     {
       "name": "Docker",
-      "description": "Containerization for applications",
+      "description": "Containerisation for applications",
       "icon": "../images/icons/docker.png?text=Docker"
     }
   ],
