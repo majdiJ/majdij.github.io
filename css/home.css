@@ -38,6 +38,21 @@
     z-index: 2; /* Ensure the hamburger menu is above the background */
 }
 
+/* Hide nav bar on desktop */
+#hero #navigation-menu {
+    display: none;
+}
+/* Show nav bar on mobile */
+@media (max-width: 768px) {
+    #hero #navigation-menu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 2; /* Ensure the nav bar is above the background */
+    }
+}
+
 #hero #hello-text h1 {
     font-size: 2rem;
 }
