@@ -126,8 +126,8 @@
     color: #ffffff91;
 }
 
-main-page {
-    min-height: 90vh;
+#main-page {
+    padding-bottom: 25px;
 }
 
 /* footer nav menu for mobile */
