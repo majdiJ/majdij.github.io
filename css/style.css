@@ -608,6 +608,101 @@ footer {
     align-items: center;
 }
 
+/* Cookies consent banner */
+/* A proment large box on bottom-right corner */
+#cookie-consent-banner {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    background-color: #003f67;
+    color: rgb(255, 255, 255);
+    max-width: 650px;
+    min-height: 100px;
+    border-radius: 10px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+    #cookie-consent-banner {
+        width: 90vw;
+        right: 5vw;
+        bottom: 10px;
+        padding: 20px;
+    }
+}
+
+.cookie-text p {
+    margin: 0 0 12px 0;
+    font-size: 1rem;
+}
+
+.cookie-text .cookie-text-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+}
+
+.button-container button {
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    /* Transition for smooth hover and active state animations */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    /* Base shadow to lift the button off the page */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-top: 1.9px solid rgba(255, 255, 255, 0.5);
+    border-left: 1.3px solid rgba(255, 255, 255, 0.2);
+    border-right: 1.6px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1.2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: -1px 4px 10px rgba(0, 0, 0, 0.2), inset 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.cookie-consent-accept {
+    /* Base color with a slight gradient for depth */
+    background-color: #f4c542;
+    background-image: linear-gradient(145deg, #d0ae49, #e6b730);
+    background: linear-gradient(
+        190deg,
+        #f4c542,
+        #f2b818
+    );
+    color: #00111c;
+}
+
+.cookie-consent-accept:hover {
+    background-color: #d4a832;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+.cookie-consent-decline {
+    background-color: #003f67;
+    background-image: linear-gradient(145deg, #002a4a, #004a7a);
+    background: linear-gradient(
+        190deg,
+        #003f67,
+        #00335a
+    );
+    color: #ffffff;
+}
+
+.cookie-consent-decline:hover {
+    background-color: #002a4a;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+
 /* copyright text */
 
 #copyright {
