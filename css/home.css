@@ -31,6 +31,13 @@
     max-width: 500px;
 }
 
+#hero .hamburger-nav-menu-homepage {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    z-index: 2; /* Ensure the hamburger menu is above the background */
+}
+
 #hero #hello-text h1 {
     font-size: 2rem;
 }

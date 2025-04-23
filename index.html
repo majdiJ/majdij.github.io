@@ -42,9 +42,38 @@
       <main>
         <!-- Custum header for home page -->
         <div id="hero">
+
+          <div class="hamburger-nav-menu">
+              <nav>
+                  <button class="hamburger" href="javascript:void(0);" class="icon" onclick="opdnHamburgerMenu()">
+                      <div class="line"></div>
+                      <div class="line"></div>
+                      <div class="line"></div>
+                  </button>
+              </nav>
+          </div>
+          
+          <div class="nav-bar">
+              <div class="Navigation-slide-menu">
+                  <nav id="navigation-menu">
+                      <button class="hamburger-close" onclick="closeHamburgerMenu()" style="color: white; font-size: 30px; background: none; border: none; position: absolute; top: 20px; right: 20px; cursor: pointer;">
+                          ✕
+                      </button>
+                      <ul>
+                          <li><a href="../index.html">Home</a></li>
+                          <li><a href="../about.html">About</a></li>
+                          <li><a href="../projects.html">Projects</a></li>
+                          <li><a class="active-nav-link" href="../education-skills.html">Education & Skills</a></li>
+                          <li><a href="../contact.html">Contact</a></li>
+                      </ul>
+                  </nav>
+              </div>
+          </div>
+
           <div id="hello-text">
               <h1><span id="smallHey">Hey there!</span><br> I'm Majdi Jaigirdar 👋</h1>
               <p>I'm a Computer Science student at Edge Hill University. I've got a passion for programming and I'm always looking to learn new things. I'm currently learning Python and Java at uni, I'm also learning web development in my free time and learning new technologies, tools and languages.</p>            
+              
               
               <div class="social-buttons">
                   <!-- GitHub Button -->
