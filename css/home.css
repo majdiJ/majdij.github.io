@@ -38,9 +38,14 @@
     z-index: 2; /* Ensure the hamburger menu is above the background */
 }
 
-/* Hide nav bar on desktop */
-#hero #navigation-menu {
-    display: none;
+/* Hide nav bar and hamburger menu on desktop */
+@media (min-width: 769px) {
+    #hero #navigation-menu {
+        display: none;
+    }
+    #hero .hamburger-nav-menu-homepage {
+        display: none;
+    }
 }
 /* Show nav bar on mobile */
 @media (max-width: 768px) {
