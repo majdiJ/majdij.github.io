@@ -8,6 +8,16 @@ function closeHamburgerMenu() {
   navBar.classList.remove('active');
 }
 
+function homepage_opdnHamburgerMenu() {
+  const navBar = document.querySelector('.homepage-nav-bar');
+  navBar.classList.add('active');
+}
+
+function homepage_closeHamburgerMenu() {
+  const navBar = document.querySelector('.homepage-nav-bar');
+  navBar.classList.remove('active');
+}
+
 // Run the code if the user is on 'education-skill.html' page
 if (window.location.pathname === '/education-skills.html') {
   fetch('dynamic_blocks_skills.json')

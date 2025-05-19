@@ -59,7 +59,7 @@ header #hello-text #smallHey {
 
 /* Navigation menu */
 
-/* Nav menu (not visible on desktop, only mboile) */
+/* Nav menu (not visible on desktop, only mobile) */
 
 .hamburger-nav-menu {
     display: none;
@@ -136,7 +136,7 @@ header #hello-text #smallHey {
         display: flex;
     }
 
-/* Mobile Menu Styles */
+    /* Mobile Menu Styles */
     .nav-bar {
         position: fixed;
         top: 0;
