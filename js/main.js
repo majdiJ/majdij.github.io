@@ -19,8 +19,8 @@ function homepage_closeHamburgerMenu() {
 }
 
 // Run the code if the user is on 'education-skill.html' page
-if (window.location.pathname === '/education-skills/') {
-  fetch('dynamic_blocks_skills.json')
+if (window.location.pathname.includes('/education-skills')) {
+  fetch('../dynamic_blocks_skills.json')
   .then(response => response.json())
   .then(data => {
     const container = document.getElementById('skills-container');
