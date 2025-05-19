@@ -13,13 +13,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.majdij.github.io/contact.html</loc>
+    <loc>https://www.majdij.github.io/contact/</loc>
     <lastmod>2025-02-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.majdij.github.io/education-skills.html</loc>
+    <loc>https://www.majdij.github.io/education-skills/</loc>
     <lastmod>2025-02-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -37,7 +37,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.majdij.github.io/privacy-policy.html</loc>
+    <loc>https://www.majdij.github.io/privacy-policy/</loc>
     <lastmod>2025-02-09</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>

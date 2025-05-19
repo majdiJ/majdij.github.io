@@ -4,8 +4,8 @@
         <meta name="google-site-verification" content="G-03ZXKCCJLR" />
         <meta charset="UTF-8">
         <meta name="robots" content="index, follow">
-        <title>About Majdi Jaigirdar</title>
-        <meta name="description" content="About Majdi Jaigirdar. Majdi Jaigirdar's personal website">
+        <title>404: Page Not Found</title>
+        <meta name="description" content="404: Page Not Found">
         <link rel="icon" href="../images/Waving_Hand_Emoji.png">
         <link rel="stylesheet" href="../css/style.css">
         <link rel="stylesheet" href="../css/home.css">
@@ -53,67 +53,63 @@
                             ✕
                         </button>
                         <ul>
-                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../">Home</a></li>
                             <li><a class="active-nav-link" href="../about/">About</a></li>
-                            <li><a href="../projects.html">Projects</a></li>
-                            <li><a href="../education-skills.html">Education & Skills</a></li>
-                            <li><a href="../contact.html">Contact</a></li>
+                            <li><a href="../projects/">Projects</a></li>
+                            <li><a href="../education-skills/">Education & Skills</a></li>
+                            <li><a href="../contact/">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </header>
         <main>
-            <div class="defualt-page-format-banner" id="about-me-photo">
+            <div class="defualt-page-format-banner" id="404-photo">
                 <div id="content">
-                    <h1>About Me</h1>
+                    <h2>404: Oops, You’re Lost!</h2>
                 </div>
             </div>
 
-            <div class="defualt-page-format-main-content" id="about-me-main-content">
-                <p>Technology has been my passion for as long as I can remember. Since childhood, I’ve been fascinated by the mechanics of how things work - electricity, motors, systems - constantly asking “why” and “how.” While most people simply use the tools around them, I’ve always felt driven to dig deeper, to uncover the hidden workings beneath the surface. To me, technology is like an ever-expanding universe waiting to be explored. Every discovery brings a sense of accomplishment, and I’m on a mission to not only understand these systems but to build them myself.</p>
+            <div class="defualt-page-format-main-content" id="404-main-content">
+                <p>Looks like you took a wrong turn. But don’t worry, it happens to the best of us!</p>
+                <p>Website is still under construction, some links may not work as expected and some content may be missing. Come back soon!</p>
                 
-                <h3>My Projects</h3>
-                <p>Throughout my journey, I’ve always had big ideas - like creating a global mesh device network where every device communicates with nearby ones to securely transfer data across the world. I wish I had learned programming earlier, but now that I have the tools, I’m bringing my ideas to life.</p>
-                
-                <p>Some of the projects I’m working on include:</p>
+                <p>Here’s what might have gone wrong:</p>
                 <ul>
-                  <li><strong>Music Metadata System</strong>: A massive database that collects metadata for tracks, albums, and artists, making it accessible via APIs.</li>
-                  <li><strong>Python-Based Static Website Hosting</strong>: A service that hosts static websites with free HTTPS certificates and provides a web-based UI for easy access and management.</li>
+                  <li>You mistyped the URL (it happens).</li>
+                  <li>The page packed up and left without telling anyone.</li>
+                  <li>A rogue AI decided to hide it for fun.</li>
                 </ul>
                 
-                <h3>Outside of Tech</h3>
-                <p>Technology isn’t just a career for me—it’s my passion. I spend most of my free time experimenting, coding, building projects, and designing user interfaces that are both functional and visually appealing. I’m also drawn to anything creative—whether it’s UI design, photography, or exploring new forms of expression. While I don’t have my own camera, I love borrowing my cousin’s now and then to capture moments and tell stories through photos.</p>  
-                <p>When I’m not knee-deep in code or lost in a creative project, I enjoy being outdoors, traveling to new places, and meeting new people. I thrive on new experiences, love socializing, and find joy in learning about others’ stories and perspectives.</p>
-                
-                <h3>My Goals</h3>
-                <p>I aim to build tech that truly matters - tools and systems that improve people’s lives and make technology more accessible to everyone. Innovation should benefit everyone, and I want to be a part of making that happen.</p>
-                
-                <h3>What I’m Learning</h3>
-                <p>Currently, I’m studying <strong>Java</strong> at university - a powerful language that’s both complex and highly efficient. In my spare time, I’m diving into <strong>web development</strong>, focusing on building web apps that feel as smooth and seamless as native applications across devices like iPhones, Androids, and Windows PCs. In fact, this very website is something I built myself.</p>
+                <p>But don’t give up yet! You can:</p>
+                <ul>
+                  <li><a href="../">Go back to the homepage</a> and pretend this never happened.</li>
+                  <li><a href="javascript:history.back()">Hit the back button</a> and try again.</li>
+                  <li>Sit here and ponder the mysteries of the internet.</li>
+                </ul>
             </div>              
         </main>
-
+        
         <footer>
             <div class="footer-content">
                 <div id="same-line-content">
                     <nav id="navigation-menu">
-                        <ul class="footer-nav">
-                            <li><a href="../index.html">Home</a></li>
+                        <ul>
+                            <li><a href="../">Home</a></li>
                             <li><a href="../about/">About</a></li>
-                            <li><a href="../projects.html">Projects</a></li>
-                            <li><a href="../education-skills.html">Education & Skills</a></li>
-                            <li><a href="../contact.html">Contact</a></li>
-                            <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="../projects/">Projects</a></li>
+                            <li><a href="../education-skills/">Education & Skills</a></li>
+                            <li><a href="../contact/">Contact</a></li>
+                            <li><a href="../privacy-policy/">Privacy Policy</a></li>
                         </ul>
                     </nav>
-                </div>
-                <p id="copyright">
+                    <p id="copyright">
                     &copy; 2025 Majdi Jaigirdar. All rights reserved.<br>
                     All product names, logos, and brands are property of their respective owners.
                     All company, product, and service names used in this website are for identification purposes only.
                     Use of these names, logos, and brands does not imply endorsement.
-                </p>
+                    </p>
+                </div>
             </div>
         </footer> 
       <div id="cookie-consent-banner">
@@ -121,7 +117,7 @@
           <div class="cookie-text">
             <p class="cookie-text-title">We use cookies!</p>
             <p class="cookie-text-content">Our website uses cookies to enhance your browsing experience and analyse site traffic. By clicking "Accept", you consent to our use of cookies. You can learn more about our cookie policy and change your cookie settings at any time.</p>
-            <p class="cookie-text-content">For more information, please read our <a href="../privacy-policy.html">Privacy Policy</a>.</p>
+            <p class="cookie-text-content">For more information, please read our <a href="../privacy-policy/">Privacy Policy</a>.</p>
           </div>
           <div class="button-container">
             <button class="cookie-consent-accept" onclick="acceptCookies()">Accept</button>
